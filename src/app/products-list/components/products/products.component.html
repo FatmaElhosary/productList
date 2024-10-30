@@ -15,5 +15,5 @@
     }
   </div>
 </div>
-} @if(data.isLoading){ Loading................. }@if(data.error) {
-Error.......... } }
+} @if(data.isLoading){ <app-loading/> }@if(data.error) {
+<app-error-message/>} }

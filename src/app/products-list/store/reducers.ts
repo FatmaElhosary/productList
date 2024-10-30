@@ -22,8 +22,8 @@ const productsFeature=createFeature({
         })
         
         ),
-        on(productsActions.getProductsFailure,(state)=>
-        ({...state,isLoading:false})
+        on(productsActions.getProductsFailure,(state,action)=>
+        ({...state,isLoading:false,error:'Error....'})
         ),
     )
 })

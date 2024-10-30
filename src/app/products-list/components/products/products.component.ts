@@ -11,11 +11,13 @@ import {
 } from '../../store/reducers';
 import { CommonModule } from '@angular/common';
 import { log } from 'console';
+import { ErrorMessageComponent } from '../../../shared/components/error-message/error-message.component';
+import { LoadingComponent } from '../../../shared/components/loading/loading.component';
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [ProductComponent, CommonModule],
+  imports: [ProductComponent, CommonModule,ErrorMessageComponent,LoadingComponent],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss',
 })
