@@ -1,0 +1,16 @@
+
+  <div class="card h-100">
+    <img
+      [src]="product.image"
+      class="card-img-top"
+      [alt]="product.description"
+    
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ product.title }}</h5>
+      <p class="card-text">{{ product.price | currency }}</p>
+      <app-star-rating [rating]="product.rating??{rate:0,count:0}"></app-star-rating>
+      <!-- <span>{{product.rating?.count}}</span> -->
+    </div>
+  </div>
+

@@ -1,0 +1,5 @@
+<div class="star-rating">
+  <i class="fa fa-star" aria-hidden="true" *ngFor="let star of stars"></i>
+  <i class="fa fa-star-half"  *ngIf="rating.rate % 1 !== 0"></i>
+  <span class="p-1">{{rating.count}}</span>
+</div>
